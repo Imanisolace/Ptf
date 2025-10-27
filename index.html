@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Science Portfolio - Analytics & Insights Expert</title>
+  <meta name="description" content="Professional data science and analytics portfolio showcasing projects, skills, and expertise in machine learning, data visualization, and statistical analysis.">
+  <meta name="keywords" content="data science, data analysis, machine learning, portfolio, analytics, visualization, statistics">
+  <meta property="og:title" content="Data Science Portfolio - Analytics & Insights Expert">
+  <meta property="og:description" content="Professional data science and analytics portfolio showcasing projects, skills, and expertise in machine learning, data visualization, and statistical analysis.">
+  <meta name="twitter:title" content="Data Science Portfolio - Analytics & Insights Expert">
+  <meta name="twitter:description" content="Professional data science and analytics portfolio showcasing projects, skills, and expertise in machine learning, data visualization, and statistical analysis.">
+
+  <!-- React & Babel -->
+  <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+  <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style type="text/tailwindcss">
+    @layer theme {
+      :root {
+        --primary-color: #2563eb;
+        --secondary-color: #1e40af;
+        --accent-color: #60a5fa;
+        --text-primary: #1f2937;
+        --text-secondary: #6b7280;
+        --bg-light: #f9fafb;
+      }
+    }
+
+    @layer base {
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        color: var(--text-primary);
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+        color: var(--text-primary);
+      }
+    }
+
+    @layer components {
+      .btn-primary {
+        @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300;
+        background: var(--primary-color);
+        color: white;
+      }
+
+      .btn-primary:hover {
+        background: var(--secondary-color);
+        transform: translateY(-2px);
+      }
+
+      .section-title {
+        @apply text-4xl font-bold mb-4;
+        color: var(--text-primary);
+      }
+
+      .card {
+        @apply bg-white rounded-xl p-6 shadow-lg transition-all duration-300;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    @layer utilities {
+      .gradient-text {
+        background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- React Components -->
+  <script type="text/babel" src="components/Header.js"></script>
+  <script type="text/babel" src="components/Hero.js"></script>
+  <script type="text/babel" src="components/About.js"></script>
+  <script type="text/babel" src="components/Skills.js"></script>
+  <script type="text/babel" src="components/Projects.js"></script>
+  <script type="text/babel" src="components/Contact.js"></script>
+  <script type="text/babel" src="components/Footer.js"></script>
+  <script type="text/babel" src="app.js"></script>
+
+  <!-- Initialize Lucide Icons -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
+
