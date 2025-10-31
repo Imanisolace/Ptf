@@ -2,40 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- Ensure compatibility with older IE/Edge -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Data Science Portfolio - Analytics & Insights Expert</title>
   <meta name="description" content="Professional data science and analytics portfolio showcasing projects, skills, and expertise in machine learning, data visualization, and statistical analysis.">
   <meta name="keywords" content="data science, data analysis, machine learning, portfolio, analytics, visualization, statistics">
-
-  <!-- Open Graph & Twitter -->
   <meta property="og:title" content="Data Science Portfolio - Analytics & Insights Expert">
   <meta property="og:description" content="Professional data science and analytics portfolio showcasing projects, skills, and expertise in machine learning, data visualization, and statistical analysis.">
   <meta name="twitter:title" content="Data Science Portfolio - Analytics & Insights Expert">
   <meta name="twitter:description" content="Professional data science and analytics portfolio showcasing projects, skills, and expertise in machine learning, data visualization, and statistical analysis.">
 
-  <!-- Polyfills for older browsers -->
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=default,fetch,Promise"></script>
-
   <!-- React & Babel -->
-  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+  <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
 
-  <!-- Tailwind CSS (CDN for dev, precompiled CSS recommended for production) -->
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- <link rel="stylesheet" href="styles/tailwind.css"> -->
 
   <!-- Lucide Icons -->
-  <link href="https://unpkg.com/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+  <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Custom Styles -->
   <style type="text/tailwindcss">
     @layer theme {
       :root {
@@ -97,18 +84,18 @@
     }
   </style>
 </head>
-<body class="bg-[var(--bg-light)]">
+<body>
   <div id="root"></div>
 
   <!-- React Components -->
-  <script type="text/babel" data-presets="env,react" src="components/Header.js"></script>
-  <script type="text/babel" data-presets="env,react" src="components/Hero.js"></script>
-  <script type="text/babel" data-presets="env,react" src="components/About.js"></script>
-  <script type="text/babel" data-presets="env,react" src="components/Skills.js"></script>
-  <script type="text/babel" data-presets="env,react" src="components/Projects.js"></script>
-  <script type="text/babel" data-presets="env,react" src="components/Contact.js"></script>
-  <script type="text/babel" data-presets="env,react" src="components/Footer.js"></script>
-  <script type="text/babel" data-presets="env,react" src="app.js"></script>
+  <script type="text/babel" src="components/Header.js"></script>
+  <script type="text/babel" src="components/Hero.js"></script>
+  <script type="text/babel" src="components/About.js"></script>
+  <script type="text/babel" src="components/Skills.js"></script>
+  <script type="text/babel" src="components/Projects.js"></script>
+  <script type="text/babel" src="components/Contact.js"></script>
+  <script type="text/babel" src="components/Footer.js"></script>
+  <script type="text/babel" src="app.js"></script>
 
   <!-- Initialize Lucide Icons -->
   <script>
@@ -118,3 +105,4 @@
   </script>
 </body>
 </html>
+
